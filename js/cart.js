@@ -12,15 +12,6 @@ function Results (type,size,crust,toppings) {
 Results.prototype.order = function() {
     return "You have made an order of " + this.type + " pizza  with " + this.toppings + " as toppings and " + this.crust + " for crust ."
 };
-function Results (type,size,crust,toppings) {
-    this.type = type;
-    this.size= size;
-    this.crust= crust;
-    this.toppings=toppings;
-};
-Results.prototype.order = function() {
-    return "You have made an order of " + this.type + " pizza  with " + this.toppings + " as toppings and " + this.crust + " for crust ."
-};
 function TotalPrice (price, quantity, delivery,toppings,crust) {
     this.price= price;
     this.quantity=quantity;
@@ -56,8 +47,27 @@ $(document).ready(function(){
 
         newOrder = new Results(pizzaType,pizzaSize, crustName,topNames,crustName);
         newTotal = new TotalPrice(price, pizzaQty, DeliveryCost,ToppingsCost,crustCost);
+        
         if (pizzaPick===1){
             alert( newOrder.order());
             alert("Your bill is: " + newTotal.finalTotal());
             alert("Thank you for shopping with us! " )
+            }else{
+                if(pizzaPick===2){
+                var location= prompt(" Where would your like your Pizza to be Delivered? ");
+                var locations =["nairobi", "ngong road", "ngong lane plaza", "cbd", "moringa"]
+                if((location !== locations[0]) && (location !== locations[1]) && (location !== locations[2]) && (location !== locations[3]) && (location !== locations[4]) && (location !== locations[5])){
+                    alert("Choose a location listed below")
+                    alert(locations)
+                }
+                else  {
+                    prompt("Please enter your phone number to facilitate communication and faster delivery.")
+                    alert("Your order has been received and it will be delivered to " + location + " An additional 200/= will be charged for delivery.");
+                    alert(newOrder.order());
+                    alert("Your bill is: " + newTotal.finalTotal());
+                    alert("Thank you for shopping with us! Your Order will be arriving soon." )
+                }
             }
+        }
+    })
+});
