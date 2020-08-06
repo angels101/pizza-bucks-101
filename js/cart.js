@@ -56,4 +56,8 @@ $(document).ready(function(){
 
         newOrder = new Results(pizzaType,pizzaSize, crustName,topNames,crustName);
         newTotal = new TotalPrice(price, pizzaQty, DeliveryCost,ToppingsCost,crustCost);
-        
+        if (pizzaPick===1){
+            alert( newOrder.order());
+            alert("Your bill is: " + newTotal.finalTotal());
+            alert("Thank you for shopping with us! " )
+            }
