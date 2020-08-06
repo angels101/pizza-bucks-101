@@ -1,87 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Pizza Bucks </title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="./css/cart.css" rel="stylesheet" type="text/css">
+    <script src="./js/jquery-3.5.1.js"></script>
+    <script src="./js/cart.js"></script>
+    <title>Pizza Bucks</title>
 </head>
-
 <body>
-    <header>
-        <div class="overlay"></div>
-        <nav>
-            <h2>PIZZA BUCKS</h2>
-            <ul>
-
-                <li class="Home">
-                    <a href="index.html">
-                        <ion-icon name="Home"></ion-icon>Home
-                    </a></li>
-                <li class="Cart">
-                    <a href="cart.html">
-                        <ion-icon name="basket"></ion-icon>Cart<span>0</span>
-                    </a>
-                </li>
-            </ul>
+    <div class="jumbotron">
+        <nav >
+            <a href="index.html">Pizza Bucks</a>
+            <a href="#odeer">ORDER</a>
+            <a href="#contact-us">CONTACT-US</a>
         </nav>
-    </header>
-
-    <div class="container">
-        <div class="image">
-            <img src="/img/pepporoni.png" alt="pizza">
-            <h3>Big Size Pepperoni-2kgs</h3>
-            <h3>Ksh 2500</h3>
-            <a class="add-cart cart1" href="#">Add Cart</a>
-        </div>
-
-        <div class="image">
-            <img src="/img/pepporoni.png" alt="BigSizeB">
-            <h3>Medium Size-1kg</h3>
-            <h3>Ksh 1800</h3>
-            <a class="add-cart cart2" href="#">Add Cart</a>
-        </div>
-
-        <div class="image">
-            <img src="/img/pepporoni.png" alt="pepporoni">
-            <h3>Small Size 0.5kg</h3>
-            <h3>Ksh 800</h3>
-            <a class="add-cart cart3" href="#">Add Cart</a>
-        </div>
-        <div class="image">
-            <img src="/img/pepporoni.png" alt="pepporoni">
-            <h3>Crust 5kg</h3>
-            <h3>Ksh 3,600</h3>
-            <a class="add-cart cart4" href="#">Add Cart</a>
-        </div>
-        <div class="image">
-            <img src="/img/pepporoni.png" alt="pepporoni">
-            <h3>Crust 2kg</h3>
-             <h3>Ksh 1,500</h3>
-            <a class="add-cart cart5" href="#">Add Cart</a>
-        </div>
-        <div class="image">
-            <img src="/img/pepporoni.png" alt="pepporoni">
-            <h3>Crust 1kg</h3>
-            <h3>Ksh 500</h3>
-            <a class="add-cart cart6" href="#">Add Cart</a>
-        </div>
     </div>
+    <div class="pizza-body">
+        <div class="pizza-body">
 
+        </div>
+        <div id="transparent">
+            
+            <div class="container" id="order">
+                <div class="about-us">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h1>About Pizza <span>Pizza&Bucks</span></h1>
+                            <p>
+                                Pizza <span>Bucks</span>Pizza Bucks,Inc.,[6] branded as Pizza&Bucks, is an Kenyan multinational pizza restaurant chain founded in 2018. </br>
+                                 The corporation is headquartered at the Angels Farms Office Park in Meru-County,[3][5] and incorporated in Kenya <span>place</span>.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h1>Additional entrees</h1>
+                            <p>
+                               <span>Pizza <em>Bucks </em></span> Pizza is the primary focus, with traditional, 
+                                specialty, and custom pizzas available in a variety of<span> crust styles and toppings</span>.
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h1> <span>Place</span></h1>
+                            <p>
+                                Why pizza <span>place </span> you might ask?
+                                <br>Featuring 40% more cheese than the company's regular pizzas, along with a greater variety of toppings.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="button-pressed">
+                <button>Place An Order</button>
+            </div>
+    
+            <div class="container nd">
+                <div id="make-order">
+                    <form action="" class="form-group" id="myForm">
+    
+                        <label for="">Choose Pizza type</label>
+                        <select name="" id="type" class="form-control">
+                            <option>Pepperoni</option>
+                            <option>Vegetable</option>
+                            <option>Small</option>
+                        </select><br>
+                        <label for="">Choose Pizza size</label>
+                        <select class="form-control" id="size">
+                            <option value="1">Large</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Small</option>
+                        </select><br>
+                        <label for="">Choose Pizza crust</label>
+                    <select name="" id="crusting" class="form-control">
+                        <option value="1">Crispy</option>
+                        <option value="2">Stuffed</option>
+                        <option value="3">Gluten-free</option>
+                    </select><br>
 
+                    <label for="">Choose Pizza Topping</label>
+                    <select name="" id="top" class="form-control">
+                        <option value="1">Pepperoni</option>
+                        <option value="2">Mushroom</option>
+                        <option value="3">Sausage</option>
+                        <option value="4">Bacon</option>
+                    </select><br>
+                    <label for="Order-number">Number of pizza</label>
+                    <input type="number" name="Order-number" id="quantity" class="form-control"><br>
 
+                    <label for="">Options for delivery</label>
+                    <select name="" id="delivery" class="form-control">
+                        <option value="1">Pick Up</option>
+                        <option value="2">Delivery</option>
+                    </select><br>
 
+                    <button type="submit" onclick="submit()" >Submit</button>
+                    
+                </form>
+            </div>
+        </div>
 
+        <div id="contact-us">
 
-    <scripts src="/js/scripts.js">
-        </script>
+        <!-- Begin Mailchimp Signup Form -->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://github.us17.list-manage.com/subscribe/post?u=edebb03d7696eb4e1486b8c63&amp;id=5bd3405f24" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">First Name </label>
+	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MMERGE2">Feedback  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="MMERGE2" class="required" id="mce-MMERGE2">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_edebb03d7696eb4e1486b8c63_5bd3405f24" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='MMERGE2';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+ <script src="/js/cart.js"></script>
+        <script src="/js/jquery-3.5.1.js"
+        <script src="js/js/bootstrap.min.js"
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
-</body>
+    </body>
 
 </html>
