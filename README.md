@@ -1,9 +1,9 @@
-# David Okwacha 
+# IP4- Pizza Ordering application-web.
 
-## Pizza Place
+## Pizza Bucks
 
 ## Description
-Pizza place delivers pizza to your door step. While you sit back and enjoy some pizza
+Pizza Bucks delivers pizza to your door step. Its a new way of securing your Bucks.
 
 #### link to site
 https://angels101.github.io/pizza-bucks-101/
