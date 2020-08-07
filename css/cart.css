@@ -1,12 +1,12 @@
 .jumbotron nav a{
-    color: rgb(255, 85, 85);
+    color: rgb(197, 169, 169);
     font-size: 40px;
     margin-left: 5vw;
     font-style: none;
 }
 .jumbotron{
     text-align: center;
-    background-color: rgb(250, 114, 35);
+    background-color: rgb(173, 172, 172);
 }
 .pizza-body{
     background-image: url("../img/pepperoni.png");
