@@ -19,7 +19,7 @@ span{
     color: rgb(234, 0, 255);
 }
 #order{
-    background-color: rgb(218, 218, 136, 0.1);
+    background-color: rgba(5, 9, 253, 0.1);
 }
 .nd{
     text-align: center;
@@ -37,7 +37,7 @@ span{
     margin-top: 5vh;
     margin-bottom: 5vh;
     font-size: 30px;
-    background-color: rgb(0, 255, 157);
+    background-color: rgb(136, 136, 136);
     padding: 5vh;
 }
 #button-pressed button{
