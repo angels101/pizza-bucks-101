@@ -1,6 +1,6 @@
-# IP4- Pizza Ordering application-web.
+# Bulla Pizza Ordering application-web.
 
-## Pizza Bucks
+## Bulla Pizza Bucks
 
 ## Description
 Pizza Bucks delivers pizza to your door step. Its a new way of securing your Bucks.
